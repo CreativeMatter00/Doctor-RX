@@ -1,0 +1,17 @@
+.setup-navbar {
+	a {
+		color: black;
+	}
+
+	.active {
+		div {
+			background-color: white;
+		}
+	}
+
+	div {
+		padding: 10px 20px;
+		transition: all 0.3s ease;
+		cursor: pointer;
+	}
+}

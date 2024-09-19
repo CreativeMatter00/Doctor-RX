@@ -1,0 +1,15 @@
+.global-Filter {
+    display: flex;
+    border: 1.8px solid rgb(8, 64, 87);
+    border-radius: 5px;
+
+    input {
+        border: none;
+        outline: none;
+        margin-left: 10px;
+    }
+
+    svg {
+        color: rgb(49, 105, 143);
+    }
+}

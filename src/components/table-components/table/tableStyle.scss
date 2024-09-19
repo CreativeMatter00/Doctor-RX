@@ -1,0 +1,325 @@
+.search-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 285px;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	margin: 10px 0;
+
+	.csv-pdf-page {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		span {
+			font-size: 16px;
+		}
+
+		select {
+			padding: 3px;
+		}
+
+		.csv-pdf {
+			display: flex;
+			gap: 20px;
+
+			.icons {
+				color: black;
+				margin-bottom: 2px;
+				cursor: pointer;
+				font-size: 18px;
+
+				&:hover {
+					color: rgb(9, 60, 136);
+				}
+			}
+		}
+	}
+}
+
+.excel {
+	color: #000000de;
+}
+
+.table-container {
+	overflow-x: auto;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+
+	td {
+		border: 1px solid #ddd;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 16px;
+
+		&:nth-last-child(1),
+		&:nth-last-child(2) {
+			text-align: center;
+
+			button {
+				cursor: pointer;
+			}
+		}
+
+		&:nth-last-child(3) {
+			text-align: center;
+		}
+
+		&:nth-last-child(4) {
+			text-align: center;
+		}
+	}
+
+	tr {
+		&:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		&:hover {
+			background-color: #ddd;
+		}
+	}
+
+	th {
+		padding: 5px 0px;
+		text-align: center;
+		background-color: #969595;
+		color: black;
+		font-size: 14px;
+		border: 1px solid #ddd;
+		user-select: none;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+		-o-user-select: none;
+
+		.sortIcon svg {
+			height: 10px;
+		}
+	}
+
+	.action-button {
+		background-color: #2a334e;
+		color: white;
+		border-radius: 4px;
+		border: none;
+		margin: 3px;
+		padding: 1px 1px 1px 3px;
+
+		.action-icon {
+			font-size: 17px;
+		}
+	}
+
+	.history-button {
+		background-color: #2a334e;
+		color: white;
+		border-radius: 4px;
+		border: none;
+		padding: 3px 5px;
+		// margin: 3px;
+		// padding: 1px 1px 1px 3px;
+	}
+
+	th:nth-last-child(1) {
+		.sortIcon {
+			display: none;
+		}
+	}
+}
+
+.table-container {
+	overflow-x: auto;
+}
+
+.user-table {
+	td {
+		&:nth-last-child(2),
+		&:nth-last-child(3) {
+			text-align: center;
+		}
+	}
+}
+
+.pagination {
+	margin-top: 15px;
+	gap: 30px;
+	display: flex;
+	min-width: 285px;
+	justify-content: space-between;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+
+	.pagination-buttons {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 6px;
+	}
+
+	button {
+		background-color: #2a334e;
+		color: white;
+		border-radius: 4px;
+		border: none;
+		padding: 2px 6px;
+		/* min-width: 50px; */
+		cursor: pointer;
+		font-size: 14px;
+
+		.button-icon {
+			font-size: 15px;
+			margin-top: 3px;
+		}
+
+		&:disabled {
+			background-color: rgba(239, 239, 239, 0.3);
+			color: rgba(16, 16, 16, 0.3);
+		}
+	}
+
+	.gotopage {
+		font-size: 15px;
+
+		input {
+			padding-left: 5px;
+			outline: none;
+			border: 1px solid rgb(107, 106, 106);
+			height: 25px;
+			width: 45px;
+		}
+	}
+
+	.page-show {
+		font-size: 15px;
+	}
+}
+
+.loader-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.submit-loader-container {
+	display: flex;
+	justify-content: flex-end;
+	min-height: 60px;
+	padding: 10px;
+}
+
+// Form
+.input-box {
+	padding: 0 16px 16px 16px;
+
+	input {
+		height: 23px !important;
+		font-size: 14px !important;
+	}
+}
+
+.select-contianer {
+	div:nth-child(2) {
+		div {
+			height: 36px !important;
+			font-size: 14px !important;
+			padding-top: 12px;
+		}
+	}
+}
+
+.label-name {
+	font-size: 14px;
+	margin-bottom: 3px;
+	font-weight: 600;
+}
+
+.table-container {
+	min-width: 285px;
+}
+
+// report
+.datepicker-container {
+	input {
+		font-size: 1rem;
+		padding: 4px;
+	}
+}
+
+.visited-status {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media print {
+	.search-container {
+		display: none;
+	}
+
+	.pagination {
+		display: none;
+	}
+
+	.navbar {
+		display: none !important;
+	}
+
+	.sidebar {
+		display: none !important;
+	}
+
+	.table-body {
+		margin: 0 !important;
+	}
+
+	thead {
+		display: none;
+	}
+
+	td:nth-last-child(1) {
+		display: none;
+	}
+
+	.breadcrumb {
+		display: none;
+	}
+
+	.datepicker-container {
+		display: none !important;
+	}
+
+	.patient-number {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.table-container {
+		overflow-x: auto;
+
+		.table-width {
+			width: 900px;
+		}
+
+		.user-table {
+			width: 900px;
+		}
+	}
+
+	.search-container {
+		flex-direction: column;
+		padding: 5px;
+		gap: 5px;
+	}
+}

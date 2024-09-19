@@ -1,0 +1,8 @@
+[
+	{ "sl": 1, "option_name": "Complaints", "active_status": true },
+	{ "sl": 2, "option_name": "Examinations", "active_status": false },
+	{ "sl": 3, "option_name": "Diagnosis", "active_status": true },
+	{ "sl": 4, "option_name": "Investigations", "active_status": true },
+	{ "sl": 5, "option_name": "Advices", "active_status": false },
+	{ "sl": 6, "option_name": "Medicines", "active_status": true }
+]
